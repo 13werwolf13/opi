@@ -154,7 +154,7 @@ def add_openh264_repo(dup=False):
 		project = project.replace('openSUSE Leap', 'openSUSE Leap 16')
 	project = project.replace(':', '_').replace(' ', '_')
 
-	url = f'http://codecs.opensuse.org/openh264/{project}/'
+	url = f'https://codecs.opensuse.org/openh264/{project}/'
 	existing_repo = get_enabled_repo_by_url(url)
 	if existing_repo:
 		print(f"Installing from existing repo '{existing_repo.name_expanded()}'")
